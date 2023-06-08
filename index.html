@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="_css/estilo.css">
+        <title>landing page com FlexBox</title>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <!--Cabeçalho so pagina-->
+            <header class="cabecalho">
+                <nav>
+                    <li><a href="#">Sobre</a></li>
+                </nav>
+                <div class="logo">
+                    <img class="img-logo" src="_img/Sem-Título-1.png" alt="Logo">
+                </div>
+                   <h1>A melhor qualidade você encontra aqui</h1>
+            </header>
+
+            <!--Conteudo - Geral da pagina-->
+            <div class="content">
+
+                <div class="slide-content">
+                    <!--slide rolante-->
+                    <div class="slides">
+                        <input class="radio" type="radio" name="slide" id="slide1" checked>
+                        <input class="radio" type="radio" name="slide" id="slide2">
+                        <input class="radio" type="radio" name="slide" id="slide3">
+                        <input class="radio" type="radio" name="slide" id="slide4">
+                        <input class="radio" type="radio" name="slide" id="slide5">
+
+                        <div class="slide s1">
+                            <img src="_img/1-Cable-Tester.JPG" alt="">
+                        </div>
+    
+                        <div class="slide s2">
+                            <img src="_img/2-Placa de rede.JPG" alt="">
+                        </div>
+    
+                        <div class="slide s3">
+                            <img src="_img/3-alicate_de_pressÃo_crimpador.jpg" alt="">
+                        </div>
+    
+                        <div class="slide s4">
+                            <img src="_img/4-rj45-nacho.jpg" alt="">
+                        </div>
+    
+                        <div class="slide s5">
+                            <img src="_img/5-Cat6.JPG" alt="">
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <label class="bar" for="slide1"></label>
+                        <label class="bar" for="slide2"></label>
+                        <label class="bar" for="slide3"></label>
+                        <label class="bar" for="slide4"></label>
+                        <label class="bar" for="slide5"></label>
+                    </div>
+                </div>
+                
+                <!--Area dos cartoes-->
+                <div class="card-container">
+                    <article class="mid-title"><h3>OS melhores preços você encontra aqui</h3></article>
+                    
+                    <!--Cartoes-->
+                    <div class="card">
+
+                        <!--Imagens do Cartao-->
+                        <div class="img">
+                            <img class="produto" src="_img/Alcate-crimpador002.JPG" alt="card1">
+                        </div>
+                        <h2 class="card-title">Alcate - Crimpador</h2>
+
+                        <!--Conteudo do cartao-->
+                        <div class="card-content">
+                            <p>
+                                Preço: 4000.00
+                            </p>
+                        </div>
+                        <a href="#">leia mais</a>
+                    </div>
+
+                    <!--Cartoes-->
+                    <div class="card">
+
+                        <div class="img">
+                            <img class="produto" src="_img/Punch-down.JPG" alt="card2">
+                        </div>
+                        <h2 class="card-title">Punch - down</h2>
+                        
+                        <div class="card-content">
+                            <p>
+                                Preço: 1000.00
+                            </p>
+                        </div> 
+                        <a href="#">leia mais</a>
+                    </div>
+
+                    <div class="card">
+
+                        <div class="img">
+                            <img class="produto" src="_img/Switch-D-SMC-8port.JPG" alt="card3">
+                        </div>
+                         <h2 class="card-title">Switch - SMC - 8 portas</h2>
+
+                         <div class="card-content">
+                            <p>
+                                Preço: 20.000.00
+                            </p>
+                         </div>
+                        <a href="#">leia mais</a>
+                    </div>
+
+                    <div class="card">
+
+                        <div class="img">
+                            <img class="produto" src="_img/Conector Rj45-fêmia.JPG" alt="card4">
+                         </div>
+
+                         <h2 class="card-title">Conector RJ45 - fêmea</h2>
+
+                         <div class="card-content">
+                            <p>
+                                Preço: 500.00
+                            </p>
+                         </div>
+                        <a href="#">leia mais</a>
+                    </div>
+
+                </div>
+
+                <!--Formulario da pagina-->
+                <div class="formulario">
+
+                   <h2>Preencha o formulário a baixo</h2>
+                   <p class="nota">
+                        Deixe uma dica sobre a vossa experiência 
+                        com a nossa pagina e diz em que aspecto devemos melhorar.
+                   </p>
+                   
+                    <form action="index.html" method="POST">
+
+                        <fieldset>
+                            <h3>Dados do usuário</h3>
+
+                            <label for="cNome">Nome:</label>
+                            <input type="text" id="cNome" name="tNome" placeholder="digite o nome..." required>
+
+                            <label for="cMail">Email:</label>
+                            <input type="email" name="tEmail" id="cMail" placeholder="digite o seu email..." required>
+                        
+                            <label for="cTel">Telefone:</label>
+                            <input type="tel" name="tTel" id="cTel" placeholder="digite o seu telefone..." maxlength="9" required>
+                        
+                            <label for="cMsg">
+                                Mensagem:    
+                            </label>
+                            <textarea name="" id="cMsg" cols="30" rows="4" placeholder="deixe aqui a sua mensagem!"></textarea>
+                            <input class="botao" type="submit"value="Submit">
+
+                        </fieldset> 
+                    </form>
+                </div>
+            </div>
+
+            <footer class="rodape">
+                
+                <article class="social">
+
+                    <article class="rede-social">
+                        <h3>Rede Sociais</h3>
+                        <p>
+                            Encontre-nos também nas rede sociais...
+                        </p>
+                    </article>
+
+                    <ul>
+                        <li><a href="https://facebook.com"></a></li>
+                        <li><a href="https://whatsapp.com"></a></li>
+                        <li><a href="https://instagram.com"></a></li>
+                        <li><a href="https://twitter.com"></a></li>
+                        <li><a href="https://linkedin.com"></a></li>
+                    </ul>
+                </article>
+                
+                <article class="autoria">
+                    <p>
+                       <marquee>Todos os direitos reservados</marquee> 
+                    </p>
+                    <p>by Lobato Baptista</p>
+                    <p>&copy; 2023</p>
+                </article>  
+            </footer>
+        </div>
+    </body>
+</html>
