@@ -1,6 +1,10 @@
 # HTML5 e Css3
 
-Primeira interação com GitHub
+Info-page - Restaurante e café
 
-#Links do projeto
+#planejamento
+- Header
+- Info-Cards
+- contents
+- footer
 
