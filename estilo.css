@@ -1,1 +1,391 @@
-estilo.css
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cabecalho {
+  padding: 15px;
+  width: 100%;
+  background-color: #146496;
+}
+
+.cabecalho .logo {
+  width: 200px;
+  height: 200px;
+  clip-path: circle(50%);
+  transform: translate(-20%);
+  background: linear-gradient(72deg, #00aacc, #ddf 99%);
+}
+
+.cabecalho .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.cabecalho h1 {
+  text-align: center;
+  text-shadow: 1px 1px 2px #dddddd;
+  color: #f60;
+}
+
+.content {
+  background: linear-gradient(72deg, #00aacc 20%, #ddf 99%);
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.slide-content {
+  border-radius: 20px;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  margin: auto;
+  display: flex;
+}
+
+.bar {
+  width: 70px;
+  height: 17px;
+  border: 2px solid #069;
+  border-radius: 5px;
+  margin: 6px;
+  transition: .4s;
+}
+
+.bar:hover {
+  background-color: #d60;
+  cursor: pointer;
+}
+
+.radio {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+
+.slide {
+  width: 20%;
+  transition: .6s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card-container .mid-title {
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+
+.card-container .mid-title h3 {
+  padding: 5px 10px;
+  color: #ffffff;
+  box-shadow: 1px 1px 5px #dddddd;
+  text-shadow: 1px 1px 4px #777;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 250px;
+  height: 350px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px #777;
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card:hover {
+  background-color: #f68;
+  margin-top: 40px;
+  box-shadow: 1px 1px 10px #f67;
+  border: 1px solid #f68;
+  color: #ffffff;
+}
+
+.card .img {
+  width: 100%;
+  height: 40%;
+}
+
+.card .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card .card-title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.card .card-content {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.card .card-content p {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.card a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #000;
+}
+
+.formulario {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  position: relative;
+}
+
+.formulario h2 {
+  color: #007acc;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px #059;
+}
+
+.formulario h2::after {
+  display: block;
+  content: '';
+  width: 350px;
+  height: 1px;
+  background-color: #007acc;
+  margin: auto;
+}
+
+.formulario .nota {
+  text-align: justify;
+  box-shadow: 1px 1px 4px #dddddd;
+  padding: 10px;
+  margin: 0 auto 15px auto;
+  width: 320px;
+}
+
+.formulario form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formulario form fieldset {
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px #8888;
+  padding: 20px 40px;
+}
+
+.formulario form fieldset h3 {
+  color: brown;
+  font-weight: bolder;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.formulario form label {
+  font-weight: bolder;
+  font-size: .9em;
+  margin: auto;
+}
+
+.formulario form input {
+  display: block;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: 1px solid #888888;
+  margin: 0 auto 15px auto;
+  width: 250px;
+}
+
+.formulario form input:invalid {
+  border: 1px dashed red;
+}
+
+.formulario form .inputcor {
+  width: 50px;
+  margin-left: 0;
+}
+
+.formulario form .botao {
+  width: 140px;
+  background-color: #024;
+  border-radius: 15px;
+  color: #ffffff;
+  margin: 20px auto 0 auto;
+  font-weight: bolder;
+  padding: 8px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.formulario form .botao:hover {
+  background: #007acc;
+  color: #dddddd;
+}
+
+.formulario form textarea {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.rodape {
+  width: 100%;
+  background-color: #000000;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rodape .social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rodape .social .rede-social {
+  width: 100%;
+  padding: 20px;
+}
+
+.rodape .social .rede-social h3 {
+  color: #008cf0;
+  padding: 10px 0;
+  text-shadow: 1px 1px 2px #099;
+}
+
+.rodape .social .rede-social h3::after {
+  display: block;
+  content: '';
+  width: 115px;
+  height: 2px;
+  background-color: #008cf0;
+}
+
+.rodape .social .rede-social p {
+  color: #ffffff;
+  padding-bottom: 15px;
+}
+
+.rodape .social ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.rodape .social li {
+  margin-left: 15px;
+}
+
+.rodape .social a {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.rodape .social a[href*="facebook.com"] {
+  background: url("../_img/facebook.png") no-repeat;
+}
+
+.rodape .social a[href*="whatsapp.com"] {
+  background: url("../_img/whatsapp.png") no-repeat;
+}
+
+.rodape .social a[href*="instagram.com"] {
+  background: url("../_img/instagram.png") no-repeat;
+}
+
+.rodape .social a[href*="twitter.com"] {
+  background: url("../_img/twitter.png") no-repeat;
+}
+
+.rodape .social a[href*="linkedin.com"] {
+  background: url("../_img/linkedin.png") no-repeat;
+}
+
+.rodape .autoria {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: auto;
+  width: 30%;
+}
+
+.rodape .autoria p {
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  line-height: 25px;
+}estilo.css
